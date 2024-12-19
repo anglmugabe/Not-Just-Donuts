@@ -1,7 +1,7 @@
 body {
     color: white;
     font-family: "Playfair Display", serif;
-    background-color: #2d2b2b;
+    background-color: #272044;
 }
 
 .container {
@@ -11,7 +11,6 @@ body {
 
 .grid {
     display: grid;
-
     grid-gap: 64px;
 }
 
@@ -22,7 +21,6 @@ body {
 .grid-3-columns {
     grid-template-columns: 1fr 1fr 1fr;
 }
-
 
 .grid-3-columns-with-first-narrow {
     grid-template-columns: 1fr 2fr 2fr;
@@ -66,7 +64,6 @@ section {
 section.secondary {
     color: black;
     background: #f8f8f8;
-
 }
 
 .text-center {
@@ -77,15 +74,25 @@ section.secondary {
     padding: 0 30px 30px;
 }
 
+.embeds-section {
+    background-color: white;
+    color: black;
+    margin: 30px 0;
+}
+
+.img-responsive {
+    width: 100%;
+    display: block;
+}
+
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-        url(images/notjustdonutslogo.jpeg);
+        url(images/not-just-donuts-logo.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    padding: 240px 0;
+    padding: 200px 0;
 }
 
 header h1 {
@@ -93,7 +100,7 @@ header h1 {
     font-weight: 450;
     font-size: 96px;
     line-height: 1;
-    margin: 30 0;
+    margin: 30px 0;
 }
 
 header h2 {
@@ -101,6 +108,7 @@ header h2 {
     font-weight: 400;
     font-size: 40px;
     line-height: 1.5;
+    margin: 0;
 }
 
 header h3 {
@@ -109,6 +117,7 @@ header h3 {
     font-size: 24px;
     letter-spacing: 5px;
     line-height: 1.5;
+    margin: 0;
 }
 
 header a {
@@ -124,16 +133,9 @@ header a {
     background-color: white;
     padding: 16px 32px;
     display: inline-block;
-    margin-top: 32px
+    margin-top: 32px;
+    margin: 0;
 }
-
-
-.img-responsive {
-    width: 100%;
-    padding: 20px 0 0 0;
-    display: block;
-}
-
 
 main {
     background-color: white;
@@ -181,12 +183,7 @@ main p {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-
 }
-
-
-
-
 
 footer {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(/images/glazedDonuts.png);
@@ -221,14 +218,11 @@ footer ul {
     padding: 0;
 }
 
-
-
 footer li {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 
 @media (max-width:960px) {
     header {
@@ -254,5 +248,9 @@ footer li {
 
     section {
         padding: 30px;
+    }
+
+    .card.header img {
+        display: none;
     }
 }
